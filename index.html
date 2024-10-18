@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marriage Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <style>
+    .slick-prev:before, .slick-next:before {
+      color: black;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <h1 class="text-xl font-bold">Matrimony-site</h1>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-red-500">Home</a></li>
+          <li><a href="#" class="hover:text-red-500">About</a></li>
+          <li><a href="#" class="hover:text-red-500">Services</a></li>
+          <li><a href="#" class="hover:text-red-500">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Find Your Perfect Match</h2>
+      <p class="mb-8 text-gray-600">Welcome to our marriage website, where you can connect with people and explore potential matches!</p>
+    </div>
+  </section>
+
+  <section class="py-8 bg-gray-200">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-bold text-center mb-6">Our Members</h3>
+      <div class="slider">
+        <!-- Card 1 -->
+        <div class="card p-4 bg-white rounded shadow-lg">
+          <img src="https://media.istockphoto.com/id/1830126474/photo/portrait-of-a-business-man-sitting-in-an-office.jpg?s=612x612&w=0&k=20&c=jFJl6x5NUZOXEH230n2asejE-vDZ0YtATM0pbfJFTgk=" alt="Person" class="w-full h-64 object-cover rounded mb-4">
+          <h4 class="text-lg font-bold">Ramu</h4>
+          <p class="text-gray-600">Age: 30, Location: New York</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card p-4 bg-white rounded shadow-lg">
+          <img src="https://cdn.pixabay.com/photo/2023/12/19/11/16/red-8457517_1280.jpg" alt="Person" class="w-full h-64 object-cover rounded mb-4">
+          <h4 class="text-lg font-bold">Jaya</h4>
+          <p class="text-gray-600">Age: 28, Location: California</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card p-4 bg-white rounded shadow-lg">
+          <img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=" alt="Person" class="w-full h-64 object-cover rounded mb-4">
+          <h4 class="text-lg font-bold">Jagadish</h4>
+          <p class="text-gray-600">Age: 35, Location: Texas</p>
+        </div>
+        <div class="card p-4 bg-white rounded shadow-lg">
+          <img src="https://media.istockphoto.com/id/1179420343/photo/smiling-man-outdoors-in-the-city.jpg?s=612x612&w=0&k=20&c=8l-gOboGEFSyCFXr09EguDmV0E0bFT5usAms1wyFBh8=" alt="Person" class="w-full h-64 object-cover rounded mb-4">
+          <h4 class="text-lg font-bold">Jitendra</h4>
+          <p class="text-gray-600">Age: 30, Location: New York</p>
+        </div>
+        <div class="card p-4 bg-white rounded shadow-lg">
+          <img src="https://cdn.pixabay.com/photo/2016/10/15/03/37/bride-1741838_1280.jpg" alt="Person" class="w-full h-64 object-cover rounded mb-4">
+          <h4 class="text-lg font-bold">Archana</h4>
+          <p class="text-gray-600">Age: 28, Location: California</p>
+        </div>
+        <div class="card p-4 bg-white rounded shadow-lg">
+          <img src="https://media.istockphoto.com/id/1369338497/photo/shot-of-a-young-businessman-using-his-digital-tablet.jpg?s=612x612&w=0&k=20&c=YBui7YXSzA1XSvYq31NqvH9_gTkQGxwlcvPVMSNwmw0=" alt="Person" class="w-full h-64 object-cover rounded mb-4">
+          <h4 class="text-lg font-bold">Rajamouli</h4>
+          <p class="text-gray-600">Age: 35, Location: Hyderabad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Marriage Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>
